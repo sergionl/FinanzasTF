@@ -1,0 +1,10 @@
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Dto\bin\Debug\netstandard2.1\Finanzas.Dto.deps.json
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Dto\bin\Debug\netstandard2.1\Finanzas.Dto.dll
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Dto\bin\Debug\netstandard2.1\Finanzas.Dto.pdb
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Dto\obj\Debug\netstandard2.1\Finanzas.Dto.csproj.AssemblyReference.cache
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Dto\obj\Debug\netstandard2.1\Finanzas.Dto.GeneratedMSBuildEditorConfig.editorconfig
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Dto\obj\Debug\netstandard2.1\Finanzas.Dto.AssemblyInfoInputs.cache
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Dto\obj\Debug\netstandard2.1\Finanzas.Dto.AssemblyInfo.cs
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Dto\obj\Debug\netstandard2.1\Finanzas.Dto.csproj.CoreCompileInputs.cache
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Dto\obj\Debug\netstandard2.1\Finanzas.Dto.dll
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Dto\obj\Debug\netstandard2.1\Finanzas.Dto.pdb

@@ -1,0 +1,17 @@
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\bin\Debug\netstandard2.1\Finanzas.Services.deps.json
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\bin\Debug\netstandard2.1\Finanzas.Services.dll
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\bin\Debug\netstandard2.1\Finanzas.Services.pdb
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\bin\Debug\netstandard2.1\Finanzas.DataAccess.dll
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\bin\Debug\netstandard2.1\Finanzas.Dto.dll
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\bin\Debug\netstandard2.1\Finanzas.Entities.dll
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\bin\Debug\netstandard2.1\Finanzas.DataAccess.pdb
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\bin\Debug\netstandard2.1\Finanzas.Dto.pdb
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\bin\Debug\netstandard2.1\Finanzas.Entities.pdb
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\obj\Debug\netstandard2.1\Finanzas.Services.csproj.AssemblyReference.cache
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\obj\Debug\netstandard2.1\Finanzas.Services.GeneratedMSBuildEditorConfig.editorconfig
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\obj\Debug\netstandard2.1\Finanzas.Services.AssemblyInfoInputs.cache
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\obj\Debug\netstandard2.1\Finanzas.Services.AssemblyInfo.cs
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\obj\Debug\netstandard2.1\Finanzas.Services.csproj.CoreCompileInputs.cache
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\obj\Debug\netstandard2.1\Finanzas.Services.csproj.CopyComplete
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\obj\Debug\netstandard2.1\Finanzas.Services.dll
+F:\Finanzas\FinanzasTF\Backend\Finanzas.Services\obj\Debug\netstandard2.1\Finanzas.Services.pdb
