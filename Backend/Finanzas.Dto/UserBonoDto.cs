@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Finanzas.Dto
 {
-    internal class UserBonoDto
+    public class UserBonoDto
     {
+        public int UserId { get; set; }
+
+        public int BonoId { get; set; }
+
     }
 }

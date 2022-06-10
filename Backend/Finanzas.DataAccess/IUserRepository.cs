@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Finanzas.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,11 @@ using System.Threading.Tasks;
 
 namespace Finanzas.DataAccess
 {
-    internal interface IUserRepository
+    public interface IUserRepository
     {
+        Task<User> GetItem(int id);
+        Task Create(User entity);
+        Task Update(User entity);
+        Task Delete(int id);
     }
 }

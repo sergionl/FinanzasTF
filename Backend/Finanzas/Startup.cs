@@ -1,4 +1,5 @@
 using Finanzas.DataAccess;
+using Finanzas.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +31,7 @@ namespace Finanzas
         {
 
             services.AddControllers();
+            services.AddInjection();
             services.AddDbContext<FinanzasDbContext>(
                 options => options.UseSqlServer(@"Server = DESKTOP-VH303IU; Database = FinanzasDB; Integrated Security = true;"));
             services.AddSwaggerGen(c =>
