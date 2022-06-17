@@ -11,9 +11,9 @@ namespace Finanzas.Services
         public static IServiceCollection AddInjection(this IServiceCollection services)
         {
             return services.AddScoped<IUserRepository, UserRepository>()
-                .AddTransient<IUserService, UserService>();
-                //.AddScoped<IBonoRepository, BonoRepository>()
-                //.AddTransient<IBonoService, BonoService>()
+                .AddTransient<IUserService, UserService>()
+                .AddScoped<IBonoRepository, BonoRepository>()
+                .AddTransient<IBonoService, BonoService>();
                 //.AddScoped<IUserBonoRepository, UserBonoRepository>()
                 //.AddTransient<IUserBonoService, UserBonoService>();
                 

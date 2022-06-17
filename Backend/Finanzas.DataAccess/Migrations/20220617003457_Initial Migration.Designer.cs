@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Finanzas.DataAccess.Migrations
 {
     [DbContext(typeof(FinanzasDbContext))]
-    [Migration("20220609233547_InitialMigration")]
+    [Migration("20220617003457_Initial Migration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,17 +28,26 @@ namespace Finanzas.DataAccess.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("MaxGrade")
+                    b.Property<bool>("MercadoPrimario")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("PeriodoDePago")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Precio")
                         .HasColumnType("int");
+
+                    b.Property<bool>("Soles")
+                        .HasColumnType("bit");
 
                     b.Property<int>("TasaAnual")
                         .HasColumnType("int");
 
-                    b.Property<int>("TiempoFaltante")
+                    b.Property<int>("ValorNominal")
                         .HasColumnType("int");
 
-                    b.Property<int>("Vencimiento")
-                        .HasColumnType("int");
+                    b.Property<string>("nombre")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -65,6 +74,10 @@ namespace Finanzas.DataAccess.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Password")
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.HasKey("Id");
 

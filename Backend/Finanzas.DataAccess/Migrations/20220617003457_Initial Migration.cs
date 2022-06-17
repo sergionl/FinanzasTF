@@ -52,10 +52,13 @@ namespace Finanzas.DataAccess.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Precio = table.Column<int>(type: "int", nullable: false),
                     TasaAnual = table.Column<int>(type: "int", nullable: false),
-                    Vencimiento = table.Column<int>(type: "int", nullable: false),
-                    TiempoFaltante = table.Column<int>(type: "int", nullable: false),
-                    MaxGrade = table.Column<int>(type: "int", nullable: false)
+                    ValorNominal = table.Column<int>(type: "int", nullable: false),
+                    PeriodoDePago = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Soles = table.Column<bool>(type: "bit", nullable: false),
+                    MercadoPrimario = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -70,7 +73,8 @@ namespace Finanzas.DataAccess.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Email = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    Empresa = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true)
+                    Empresa = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
+                    Password = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true)
                 },
                 constraints: table =>
                 {

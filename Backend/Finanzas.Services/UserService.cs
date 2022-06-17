@@ -21,7 +21,7 @@ namespace Finanzas.Services
 
         public async Task Create(UserDto entity)
         {
-            //FinanzasException
+            
             if (entity.Name == "" || entity.Name == null)
             {
                 throw new FinanzasException("It is neccesary to add a name");
@@ -30,6 +30,10 @@ namespace Finanzas.Services
             if (string.IsNullOrEmpty(entity.Email))
             {
                 throw new FinanzasException("It is neccesary to add email");
+            }
+            if (string.IsNullOrEmpty(entity.Password))
+            {
+                throw new FinanzasException("It is neccesary to add a password");
             }
             try
             {
@@ -46,6 +50,7 @@ namespace Finanzas.Services
             {
                 Name = entity.Name,
                 Email = entity.Email,
+                Password = entity.Password,
                 Empresa = entity.Empresa,
             });
 

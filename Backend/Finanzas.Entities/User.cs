@@ -20,6 +20,10 @@ namespace Finanzas.Entities
         [StringLength(30)]
         public string Empresa { get; set; }
 
+
+        [StringLength(30)]
+        public string Password { get; set; }
+
         //Many to Many
         public  ICollection<UserBono> UserBonos { get; set; }
 

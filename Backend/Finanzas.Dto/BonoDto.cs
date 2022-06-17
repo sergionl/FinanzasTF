@@ -9,13 +9,17 @@ namespace Finanzas.Dto
     public class BonoDto
     {
         public int Id { get; set; }
-
+        public int Precio { get; set; }
         public int TasaAnual { get; set; }
 
-        public int Vencimiento { get; set; }
+        public int ValorNominal { get; set; }
 
-        public int TiempoFaltante { get; set; }
+        public string PeriodoDePago { get; set; }
 
-        public int MaxGrade { get; set; }
+        public string nombre { get; set; }
+
+        public bool Soles { get; set; }
+
+        public bool MercadoPrimario { get; set; }
     }
 }
