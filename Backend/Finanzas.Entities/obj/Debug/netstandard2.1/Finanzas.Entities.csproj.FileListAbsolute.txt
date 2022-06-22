@@ -11,3 +11,16 @@ F:\Finanzas\FinanzasTF\Backend\Finanzas.Entities\obj\Debug\netstandard2.1\Finanz
 F:\Finanzas\FinanzasTF\Backend\Finanzas.Entities\obj\Debug\netstandard2.1\Finanzas.Entities.csproj.CopyComplete
 F:\Finanzas\FinanzasTF\Backend\Finanzas.Entities\obj\Debug\netstandard2.1\Finanzas.Entities.dll
 F:\Finanzas\FinanzasTF\Backend\Finanzas.Entities\obj\Debug\netstandard2.1\Finanzas.Entities.pdb
+D:\FinanzasTF\Backend\Finanzas.Entities\bin\Debug\netstandard2.1\Finanzas.Entities.deps.json
+D:\FinanzasTF\Backend\Finanzas.Entities\bin\Debug\netstandard2.1\Finanzas.Entities.dll
+D:\FinanzasTF\Backend\Finanzas.Entities\bin\Debug\netstandard2.1\Finanzas.Entities.pdb
+D:\FinanzasTF\Backend\Finanzas.Entities\bin\Debug\netstandard2.1\Finanzas.Dto.dll
+D:\FinanzasTF\Backend\Finanzas.Entities\bin\Debug\netstandard2.1\Finanzas.Dto.pdb
+D:\FinanzasTF\Backend\Finanzas.Entities\obj\Debug\netstandard2.1\Finanzas.Entities.csproj.AssemblyReference.cache
+D:\FinanzasTF\Backend\Finanzas.Entities\obj\Debug\netstandard2.1\Finanzas.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\FinanzasTF\Backend\Finanzas.Entities\obj\Debug\netstandard2.1\Finanzas.Entities.AssemblyInfoInputs.cache
+D:\FinanzasTF\Backend\Finanzas.Entities\obj\Debug\netstandard2.1\Finanzas.Entities.AssemblyInfo.cs
+D:\FinanzasTF\Backend\Finanzas.Entities\obj\Debug\netstandard2.1\Finanzas.Entities.csproj.CoreCompileInputs.cache
+D:\FinanzasTF\Backend\Finanzas.Entities\obj\Debug\netstandard2.1\Finanzas.Entities.csproj.CopyComplete
+D:\FinanzasTF\Backend\Finanzas.Entities\obj\Debug\netstandard2.1\Finanzas.Entities.dll
+D:\FinanzasTF\Backend\Finanzas.Entities\obj\Debug\netstandard2.1\Finanzas.Entities.pdb

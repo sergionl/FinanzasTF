@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tg6glIvwmTtq2TmRTb34k4raGPi05NS7KJTNU/LRydc7kbNJQ2fgBAUfz9A12F0dUXAI0bXX8tgoNnBtm4V0fA==",
+  "dgSpecHash": "cEHEvqkinLOZcWUPh6r7kuFNp+uwkSYhTFMbHlVXdRpSh3zHB28yi+wZfE7TM83ivNuNQjS1ekIrlfWR8bW8UA==",
   "success": true,
-  "projectFilePath": "F:\\Finanzas\\FinanzasTF\\Backend\\Finanzas.Dto\\Finanzas.Dto.csproj",
+  "projectFilePath": "D:\\FinanzasTF\\Backend\\Finanzas.Dto\\Finanzas.Dto.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

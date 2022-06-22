@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Finanzas\\FinanzasTF\\Backend\\Finanzas.Dto\\Finanzas.Dto.csproj": {}
+    "D:\\FinanzasTF\\Backend\\Finanzas.Dto\\Finanzas.Dto.csproj": {}
   },
   "projects": {
-    "F:\\Finanzas\\FinanzasTF\\Backend\\Finanzas.Dto\\Finanzas.Dto.csproj": {
+    "D:\\FinanzasTF\\Backend\\Finanzas.Dto\\Finanzas.Dto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Finanzas\\FinanzasTF\\Backend\\Finanzas.Dto\\Finanzas.Dto.csproj",
+        "projectUniqueName": "D:\\FinanzasTF\\Backend\\Finanzas.Dto\\Finanzas.Dto.csproj",
         "projectName": "Finanzas.Dto",
-        "projectPath": "F:\\Finanzas\\FinanzasTF\\Backend\\Finanzas.Dto\\Finanzas.Dto.csproj",
+        "projectPath": "D:\\FinanzasTF\\Backend\\Finanzas.Dto\\Finanzas.Dto.csproj",
         "packagesPath": "C:\\Users\\Sergio\\.nuget\\packages\\",
-        "outputPath": "F:\\Finanzas\\FinanzasTF\\Backend\\Finanzas.Dto\\obj\\",
+        "outputPath": "D:\\FinanzasTF\\Backend\\Finanzas.Dto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

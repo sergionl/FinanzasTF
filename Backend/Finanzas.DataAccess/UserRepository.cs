@@ -43,5 +43,10 @@ namespace Finanzas.DataAccess
             _context.Entry(entity).State = EntityState.Modified;
             await _context.SaveChangesAsync();
         }
+
+        public async Task<User> GetItemByEmail(string email)
+        {
+            return await _context.Users.Where(x => x.Email == email).FirstOrDefaultAsync();
+        }
     }
 }

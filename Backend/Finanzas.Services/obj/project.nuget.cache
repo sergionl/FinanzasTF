@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A1w2VRiiS619FuxC6D5CkLvz2KelxPmlI303extWYxXRgcRD0uRqRwb4V1v0q4sC9Dqs5XzGcLGE6HHBHaQmZg==",
+  "dgSpecHash": "hDJmSI6ex7X0ZZtZ0h5kUjCxD7t5RYCOe4Ccuzk1MHLt4uvFM32B8aW1A2/K9n6zgueW+KP0h8D6p1aH+tJrDw==",
   "success": true,
-  "projectFilePath": "F:\\Finanzas\\FinanzasTF\\Backend\\Finanzas.Services\\Finanzas.Services.csproj",
+  "projectFilePath": "D:\\FinanzasTF\\Backend\\Finanzas.Services\\Finanzas.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sergio\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.10\\microsoft.aspnetcore.cryptography.internal.5.0.10.nupkg.sha512",
     "C:\\Users\\Sergio\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.10\\microsoft.aspnetcore.cryptography.keyderivation.5.0.10.nupkg.sha512",

@@ -14,5 +14,7 @@ namespace Finanzas.Services
         Task Create(UserDto entity);
         Task Update(UserDto entity);
         Task Delete(int id);
+
+        Task<UserDto> GetItemByEmail(string email);
     }
 }

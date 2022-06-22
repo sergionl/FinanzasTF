@@ -6289,11 +6289,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Finanzas\\FinanzasTF\\Backend\\Finanzas\\Finanzas.csproj",
+      "projectUniqueName": "D:\\FinanzasTF\\Backend\\Finanzas\\Finanzas.csproj",
       "projectName": "Finanzas",
-      "projectPath": "F:\\Finanzas\\FinanzasTF\\Backend\\Finanzas\\Finanzas.csproj",
+      "projectPath": "D:\\FinanzasTF\\Backend\\Finanzas\\Finanzas.csproj",
       "packagesPath": "C:\\Users\\Sergio\\.nuget\\packages\\",
-      "outputPath": "F:\\Finanzas\\FinanzasTF\\Backend\\Finanzas\\obj\\",
+      "outputPath": "D:\\FinanzasTF\\Backend\\Finanzas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6314,8 +6314,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "F:\\Finanzas\\FinanzasTF\\Backend\\Finanzas.Services\\Finanzas.Services.csproj": {
-              "projectPath": "F:\\Finanzas\\FinanzasTF\\Backend\\Finanzas.Services\\Finanzas.Services.csproj"
+            "D:\\FinanzasTF\\Backend\\Finanzas.Services\\Finanzas.Services.csproj": {
+              "projectPath": "D:\\FinanzasTF\\Backend\\Finanzas.Services\\Finanzas.Services.csproj"
             }
           }
         }

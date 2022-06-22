@@ -83,6 +83,7 @@ namespace Finanzas.Services
             userDto.Id = user.Id;
             userDto.Name = user.Name;
             userDto.Email = user.Email;
+            userDto.Password = " ";
             userDto.Empresa = user.Empresa;
             
 
@@ -103,6 +104,27 @@ namespace Finanzas.Services
             user.Empresa = entity.Empresa;
 
             await _repository.Update(user);
+        }
+
+        public async Task<UserDto> GetItemByEmail(string email)
+        {
+            User user = await _repository.GetItemByEmail(email);
+
+            if (user == null)
+            {
+                throw new NullReferenceException("No User exist with email " + email);
+            }
+
+            UserDto userDto = new UserDto();
+
+            userDto.Id = user.Id;
+            userDto.Name = user.Name;
+            userDto.Email = user.Email;
+            userDto.Password = " ";
+            userDto.Empresa = user.Empresa;
+
+
+            return userDto;
         }
     }
 }

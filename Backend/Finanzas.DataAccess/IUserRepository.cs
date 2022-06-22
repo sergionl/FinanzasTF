@@ -13,5 +13,7 @@ namespace Finanzas.DataAccess
         Task Create(User entity);
         Task Update(User entity);
         Task Delete(int id);
+
+        Task<User> GetItemByEmail(string email);
     }
 }

@@ -78,6 +78,25 @@ namespace Finanzas.Controllers
             return Accepted();
         }
 
+        [HttpGet]
+        public async Task<ActionResult<UserDto>> GetItemByEmail([FromQuery] string email)
+        {
+            UserDto userDto;
+            try
+            {
+                userDto = await _service.GetItemByEmail(email);
+            }
+            catch (NullReferenceException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (FinanzasException e)
+            {
+                return BadRequest(e.Message + " " + e.value);
+            }
+            return Ok(userDto);
+        }
+
 
     }
 }

@@ -13,9 +13,9 @@ namespace Finanzas.Services
             return services.AddScoped<IUserRepository, UserRepository>()
                 .AddTransient<IUserService, UserService>()
                 .AddScoped<IBonoRepository, BonoRepository>()
-                .AddTransient<IBonoService, BonoService>();
-                //.AddScoped<IUserBonoRepository, UserBonoRepository>()
-                //.AddTransient<IUserBonoService, UserBonoService>();
+                .AddTransient<IBonoService, BonoService>()
+                .AddScoped<IUserBonoRepository, UserBonoRepository>()
+                .AddTransient<IUserBonoService, UserBonoService>();
                 
         }
     }
