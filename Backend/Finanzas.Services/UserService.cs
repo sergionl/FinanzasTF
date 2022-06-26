@@ -106,16 +106,26 @@ namespace Finanzas.Services
             await _repository.Update(user);
         }
 
-        public async Task<UserDto> GetItemByEmail(string email)
+        public async Task<UserDto> GetItemByEmail(string email,string password)
         {
             User user = await _repository.GetItemByEmail(email);
+            UserDto userDto = new UserDto();
 
             if (user == null)
             {
-                throw new NullReferenceException("No User exist with email " + email);
+                userDto.Id = 0;
+                //userDto.Email = user.Email;
+                return userDto;
+                //throw new NullReferenceException("No User exist with email " + email);
+            }
+            if (user.Password != password)
+            {
+                userDto.Id = 0;
+                //userDto.Email = user.Email;
+                return userDto;
             }
 
-            UserDto userDto = new UserDto();
+            
 
             userDto.Id = user.Id;
             userDto.Name = user.Name;

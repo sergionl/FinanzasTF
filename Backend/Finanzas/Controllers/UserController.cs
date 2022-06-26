@@ -79,12 +79,12 @@ namespace Finanzas.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<UserDto>> GetItemByEmail([FromQuery] string email)
+        public async Task<ActionResult<UserDto>> GetItemByEmail([FromQuery] string email, [FromQuery] string password)
         {
             UserDto userDto;
             try
             {
-                userDto = await _service.GetItemByEmail(email);
+                userDto = await _service.GetItemByEmail(email,password);
             }
             catch (NullReferenceException e)
             {
