@@ -40,17 +40,7 @@ function UsersForm(){
             apiUsers.edit(user).then(() => { setUser(user) });
         }
         else {
-            //apiUsers.add(user).then((data) => {
-            //    history.push(`/users/detail/${data.id}`);
-            //});
-            //console.log(user);
-            //
-            //apiUsers.add(user);
-            //
-            //apiUsers.login(user.email,user.password).then((data) => {
-            //        console.log(data);
-            //        history.push(`/users/detail/${data.id}`);
-            //});
+           
             apiUsers.add(user);
             history.push('/');
         }

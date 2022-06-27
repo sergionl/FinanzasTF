@@ -27,20 +27,24 @@ function BonoForm(){
     const { value, name } = event.target;
     setBono({ ...bono, [name]: value });
   }
+  //default values
+  bono.convex=0;
+  bono.van=0;
+  bono.tir=0;
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>){
         //console.log(bono);
       /*setLoading(true);*/
         event.preventDefault();
-        console.log("pureba");
-        apiBonos.add(bono).then(() => {
-            updatedLoading();
-            console.log(bono);
-            //history.push("/bonos/list");
-            console.log("resultado");
+        //console.log(bono);
+        apiBonos.add(bono)//.then(() => {
+            //updatedLoading();
+            //console.log(bono);
+        //history.push("/bonos/list");
+            //console.log("resultado");
 
         //setMessage("Se agrego correctamento el cliente");
-      });
+      //});
   }
   function updatedLoading() {
     setLoading(false);
@@ -109,6 +113,16 @@ function BonoForm(){
                 //Es el atributo el " ... "
                 name="nombre"
                 label="Nombre"
+                />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+                <CustomTextField
+                value={bono.tiempo}
+                onChange={(event) => changeValueBono(event)}
+                required
+                //Es el atributo el " ... "
+                name="tiempo"
+                label="Tiempo restante"
                 />
             </Grid>
             <Grid item xs={12} sm={6}>

@@ -3,7 +3,7 @@ import request from "./api";
 //import authService from "./auth/auth.service";
 
 const apiUsers = {
-    add: (data: User)=> request.post(`User/`,data),
+    add: (data: User)=> request.post(`User/Post`,data),
     edit: (data: User) => request.put(`User/${data.id}`, data), 
     delete: (id: number) => request.delete(`User/Delete?id=${id}`),
     detail: (id: string) => request.get<User>(`User/GetItemById?id=${id}`),

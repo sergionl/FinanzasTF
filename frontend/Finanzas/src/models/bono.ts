@@ -8,5 +8,8 @@ export class Bono{
     nombre: string="";
     soles: boolean=true;
     mercadoPrimario=true;
+    van: number;
+    tir: number;
+    convex: number;
 
 }

@@ -60,6 +60,7 @@ namespace Finanzas.Services
                     van += aux;
                 }
             }
+            van -= entity.ValorNominal;
             //int tamanio = entity.Tiempo;
 
             double[] cashFlows = new double[] { -entity.ValorNominal };
@@ -81,7 +82,7 @@ namespace Finanzas.Services
 
             double convex = 0;
 
-            throw new FinanzasException("It is neccesary to add a name");
+            //throw new FinanzasException("It is neccesary to add a name");
 
 
             await _repository.Create(new Bono

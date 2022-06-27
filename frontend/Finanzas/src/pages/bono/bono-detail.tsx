@@ -42,57 +42,16 @@ function BonoDetails(){
         }
     }, [id]);
 
-    function VAN(){
-        let van = 0.0;
-        let ta = bono.tasaAnual/100;
-        let interes = bono.valorNominal*ta;
-        //console.log(interes);
-        //var van = new bigDecimal(0.0);
-        //var interes = bigDecimal.multiply(bono.valorNominal,ta);
+    
 
-        //console.log(ta);
-        //console.log(interes);
-        for(let i = 1;i<bono.tiempo+1;i++){
-            if(i != bono.tiempo){
-                //console.log(i);
-                let aux = fv(ta,i,-interes,0);
-                console.log(aux);
-                van += aux;
-                
-            }else{
-                let aux = fv(ta,i,-interes-bono.valorNominal,0);
-                van+= aux;
-                console.log(aux);
-            }
+  
 
-            //console.log(van);
-
-        }
-        return van;
-    }
-    let van = VAN();
-
-    function TIR(){
-        let tir = 0;
-
-
-        return tir;
-    }
-    let tir = TIR();
-
-    function convex(){
-        let c = 0;
-
-        return c;
-    }
-    let c = convex();
+   
 
     return(
         <React.Fragment>
-            <CustomBodyName>Detalles bono</CustomBodyName>
-            <CustomCardHeader>
-            <h3> Detalles del bono : {bono.nombre} </h3>
-          </CustomCardHeader>
+            <CustomBodyName>Detalles del bono</CustomBodyName>
+            
           <CustomCardBody>
             <Grid container>
                 <Grid item xs={12} sm={12} md={6}>
@@ -106,11 +65,11 @@ function BonoDetails(){
                 <h5> Tiempo: </h5>
                 <p> {bono.tiempo} </p>
                 <h5> VAN: </h5>
-                <p> {van} </p>
+                <p> {bono.van} </p>
                 <h5> TIR: </h5>
-                <p> {tir} </p>
+                <p> {bono.tir} </p>
                 <h5> Convex: </h5>
-                <p> {c} </p>
+                <p> {bono.convex} </p>
                 </Grid >
             </Grid >
           </CustomCardBody>

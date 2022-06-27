@@ -43,82 +43,26 @@ export const secondaryListItems = (
           </ListItemIcon>
           <ListItemText primary="Mostrar Bonos" />
       </ListItem>
-
-    <ListSubheader inset>Grupos</ListSubheader>
       <ListItem
           button
           component={NavLink}
-          to={"/groups/list"}
+          //Agrega al router el "to"
+          to={"/bonos/create"}
           activeClassName="Mui-selected"
       >
           <ListItemIcon>
               <AssignmentIcon />
           </ListItemIcon>
-          <ListItemText primary="Mostrar grupos" />
-      </ListItem>
-      {<ListItem
-          button
-          component={NavLink}
-          to={"/groups/create"}
-          activeClassName="Mui-selected"
-      >
-          <ListItemIcon>
-              <AssignmentIcon />
-          </ListItemIcon>
-          <ListItemText primary="Agregar grupos" />
-      </ListItem>}
-
-    <ListSubheader inset>Juegos</ListSubheader>
-      <ListItem
-          button
-          component={NavLink}
-          to={"/games/list"}
-          activeClassName="Mui-selected"
-      >
-          <ListItemIcon>
-              <AssignmentIcon />
-          </ListItemIcon>
-          <ListItemText primary="Mostrar juegos" />
+          <ListItemText primary="Agregar Bonos" />
       </ListItem>
 
-      
-    <ListSubheader inset>Actividades</ListSubheader>
-    <ListItem
-      button
-      component={NavLink}
-      to={`/activities/list/${appUserData.id}`}
-      activeClassName="Miu-selected">
-      
-      <ListItemIcon>
-        <AssignmentIcon/>
-      </ListItemIcon>
-        <ListItemText primary="Mostrar actividades" />
-    </ListItem>
+    
 
-    <ListItem
-      button
-      component={NavLink}
-      to={"/activities/add"}
-      activeClassName="Miu-selected">
+    
       
-      <ListItemIcon>
-        <AssignmentIcon/>
-      </ListItemIcon>
-        <ListItemText primary="Agregar actividades" />
-    </ListItem>
+    
 
-    <ListSubheader inset>Logros</ListSubheader>
-    <ListItem
-      button
-      component={NavLink}
-      to={`/logros/list/${appUserData.id}`}
-      activeClassName="Miu-selected">
-      
-      <ListItemIcon>
-        <AssignmentIcon/>
-      </ListItemIcon>
-        <ListItemText primary="Mostrar Logros" />
-    </ListItem>
+    
     
   </div>
 );
