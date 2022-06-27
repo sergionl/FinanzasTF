@@ -44,7 +44,7 @@ namespace Finanzas
             services.AddControllers();
             services.AddInjection();
             services.AddDbContext<FinanzasDbContext>(
-                options => options.UseSqlServer(@"Server = DESKTOP-VH303IUoooooooooooooo; Database = FinanzasDB; Integrated Security = true;"));
+                options => options.UseSqlServer(@"Server = DESKTOP-VH303IU; Database = FinanzasDB; Integrated Security = true;"));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Finanzas", Version = "v1" });
@@ -60,13 +60,16 @@ namespace Finanzas
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Finanzas v1"));
+                
             }
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Finanzas v1"));
 
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseAuthorization();
 
