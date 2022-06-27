@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Finanzas.DataAccess.Migrations
 {
     [DbContext(typeof(FinanzasDbContext))]
-    [Migration("20220617003457_Initial Migration")]
-    partial class InitialMigration
+    [Migration("20220627040236_endpls")]
+    partial class endpls
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,6 +28,9 @@ namespace Finanzas.DataAccess.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<double>("Convex")
+                        .HasColumnType("float");
+
                     b.Property<bool>("MercadoPrimario")
                         .HasColumnType("bit");
 
@@ -40,8 +43,17 @@ namespace Finanzas.DataAccess.Migrations
                     b.Property<bool>("Soles")
                         .HasColumnType("bit");
 
+                    b.Property<double>("TIR")
+                        .HasColumnType("float");
+
                     b.Property<int>("TasaAnual")
                         .HasColumnType("int");
+
+                    b.Property<int>("Tiempo")
+                        .HasColumnType("int");
+
+                    b.Property<double>("VAN")
+                        .HasColumnType("float");
 
                     b.Property<int>("ValorNominal")
                         .HasColumnType("int");

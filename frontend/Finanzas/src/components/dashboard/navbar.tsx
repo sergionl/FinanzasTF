@@ -42,7 +42,7 @@ function Navbar({ toggleDrawer, open }: Props) {
                             flexGrow: 1,
                         }}
                     >
-                        LetSkole
+                        Bonera
                     </Typography>
                     <IconButton color='inherit'>
                         <Badge badgeContent={4} color='secondary'>

@@ -4,6 +4,7 @@ export class Bono{
     tasaAnual: number = 0;
     valorNominal: number = 0;
     periodoDePago: string="";
+    tiempo: number = 0;
     nombre: string="";
     soles: boolean=true;
     mercadoPrimario=true;

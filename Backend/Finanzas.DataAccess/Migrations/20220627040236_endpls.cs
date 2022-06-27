@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Finanzas.DataAccess.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class endpls : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -55,10 +55,14 @@ namespace Finanzas.DataAccess.Migrations
                     Precio = table.Column<int>(type: "int", nullable: false),
                     TasaAnual = table.Column<int>(type: "int", nullable: false),
                     ValorNominal = table.Column<int>(type: "int", nullable: false),
+                    Tiempo = table.Column<int>(type: "int", nullable: false),
                     PeriodoDePago = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Soles = table.Column<bool>(type: "bit", nullable: false),
-                    MercadoPrimario = table.Column<bool>(type: "bit", nullable: false)
+                    MercadoPrimario = table.Column<bool>(type: "bit", nullable: false),
+                    VAN = table.Column<double>(type: "float", nullable: false),
+                    TIR = table.Column<double>(type: "float", nullable: false),
+                    Convex = table.Column<double>(type: "float", nullable: false)
                 },
                 constraints: table =>
                 {

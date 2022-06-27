@@ -24,17 +24,18 @@ function NavbarAuthModule({ toggleDrawer, open }: Props) {
     const history = useHistory();
     const appUserData:User = Object.assign(new User,
         JSON.parse(localStorage.getItem('appUserData')));
+    
     const [loggedIn, setLoggedIn] = useState(false);
 
     const login =( ()=>{
         setLoggedIn(true)
     });
 
-    //const logout =( ()=>{
-    //    authService.logout();
-    //    history.push("/");
-    //    setLoggedIn(false)
-    //});
+    const logout =( ()=>{
+        //authService.logout();
+        history.push("/");
+        setLoggedIn(false)
+    });
 
     useEffect(() => {
         if (appUserData.id != 0) {
@@ -69,12 +70,12 @@ function NavbarAuthModule({ toggleDrawer, open }: Props) {
                             padding: "20px"
                         }}
                     >
-                        LetSkole
+                        Bonera
                     </Typography>
                     { !loggedIn  && (
                         <Button
                             hidden={true}
-                            //onClick={login}
+                            onClick={login}
                             variant="contained"
                             color={"primary"}
                         >
@@ -84,7 +85,7 @@ function NavbarAuthModule({ toggleDrawer, open }: Props) {
                     { loggedIn  && (
                         <Button
                         hidden={true}
-                        //onClick={logout}
+                        onClick={logout}
                         variant="contained"
                         color={"secondary"}
                         >

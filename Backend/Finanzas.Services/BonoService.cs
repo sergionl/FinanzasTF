@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Excel.FinancialFunctions;
+
 
 namespace Finanzas.Services
 {
@@ -42,6 +44,45 @@ namespace Finanzas.Services
                 throw new FinanzasException("It is neccesary to add a name");
             }
 
+            //calcular van
+            double van = 0;
+            double ta = entity.TasaAnual / 100.0;
+            double interes = entity.ValorNominal*ta;
+            for(double i = 1; i < entity.Tiempo+1; i++)
+            {
+                if (i != entity.Tiempo)
+                {
+                    van += interes / Math.Pow(1+ta,i);
+                }
+                else
+                {
+                    double aux = (entity.ValorNominal + interes) / Math.Pow(1 + ta, i);
+                    van += aux;
+                }
+            }
+            //int tamanio = entity.Tiempo;
+
+            double[] cashFlows = new double[] { -entity.ValorNominal };
+            
+            for (double i = 1; i < entity.Tiempo + 1; i++)
+            {
+                if (i != entity.Tiempo)
+                {
+                    cashFlows = cashFlows.Concat(new double[] {interes}).ToArray();
+                    //cashFlows.Append(interes);
+                }
+                else
+                {
+                    cashFlows = cashFlows.Concat(new double[] { entity.ValorNominal + interes }).ToArray();
+                    //cashFlows.Append(entity.ValorNominal+interes);
+                }
+            }
+            double irr = Financial.Irr(cashFlows);
+
+            double convex = 0;
+
+            throw new FinanzasException("It is neccesary to add a name");
+
 
             await _repository.Create(new Bono
             {
@@ -49,9 +90,13 @@ namespace Finanzas.Services
                 TasaAnual = entity.TasaAnual,
                 ValorNominal = entity.ValorNominal,
                 PeriodoDePago = entity.PeriodoDePago,
+                Tiempo = entity.Tiempo,
                 nombre = entity.nombre,
                 Soles = entity.Soles,
                 MercadoPrimario = entity.MercadoPrimario,
+                VAN = van,
+                TIR = irr,
+                Convex = convex,
             });
         }
 
@@ -83,9 +128,13 @@ namespace Finanzas.Services
             bonoDto.TasaAnual = bono.TasaAnual;
             bonoDto.ValorNominal = bono.ValorNominal;
             bonoDto.PeriodoDePago = bono.PeriodoDePago;
+            bonoDto.Tiempo = bono.Tiempo;
             bonoDto.nombre = bono.nombre;
             bonoDto.Soles = bono.Soles;
             bonoDto.MercadoPrimario = bono.MercadoPrimario;
+            bonoDto.VAN = bono.VAN;
+            bonoDto.TIR = bono.TIR;
+            bonoDto.Convex = bono.Convex;
 
 
 
@@ -106,6 +155,7 @@ namespace Finanzas.Services
             bono.TasaAnual = entity.TasaAnual;
             bono.ValorNominal = entity.ValorNominal;
             bono.PeriodoDePago = entity.PeriodoDePago;
+            bono.Tiempo = entity.Tiempo;
             bono.nombre = entity.nombre;
             bono.Soles = entity.Soles;
             bono.MercadoPrimario = entity.MercadoPrimario;
@@ -122,9 +172,13 @@ namespace Finanzas.Services
                 TasaAnual = c.TasaAnual,
                 ValorNominal = c.ValorNominal,
                 PeriodoDePago = c.PeriodoDePago,
+                Tiempo = c.Tiempo,
                 nombre = c.nombre,
                 Soles = c.Soles,
-                MercadoPrimario = c.MercadoPrimario
+                MercadoPrimario = c.MercadoPrimario,
+                VAN = c.VAN,
+                TIR = c.TIR,
+                Convex = c.Convex
             }).ToList();
         }
     }

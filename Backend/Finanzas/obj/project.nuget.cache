@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "5FIfIeGi7NJvxaN5H2lcOmdsRFiNWSsoLOjkGg+qFtVkdSaCJgzni9zWF/qoDPEESgs4CnXAiuIvK3y/qtzfvQ==",
+  "dgSpecHash": "pO47dnY2U7NRKWEVByNa73I/kvMtLsCi4aj5hctttto8oqjhVFVY3NycCQH/TgFC4aSo70H6h85UBE2PyGsMaQ==",
   "success": true,
   "projectFilePath": "D:\\FinanzasTF\\Backend\\Finanzas\\Finanzas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sergio\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Sergio\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\Sergio\\.nuget\\packages\\excelfinancialfunctions\\3.2.0\\excelfinancialfunctions.3.2.0.nupkg.sha512",
+    "C:\\Users\\Sergio\\.nuget\\packages\\fsharp.core\\6.0.4\\fsharp.core.6.0.4.nupkg.sha512",
     "C:\\Users\\Sergio\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Sergio\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.10\\microsoft.aspnetcore.cryptography.internal.5.0.10.nupkg.sha512",
     "C:\\Users\\Sergio\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.10\\microsoft.aspnetcore.cryptography.keyderivation.5.0.10.nupkg.sha512",

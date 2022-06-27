@@ -34,17 +34,25 @@ function LoginForm(){
 
     function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
-        console.log("hola");
+        //console.log("hola");
+        //localsStorage
+        
+
        //login
        apiUsers.login(userLogin.email,userLogin.password).then((data)=>{
-           data.id ? history.push(`/users/detail/${data.id}`) :
+            
+            data.id ? saveData(data):
                //history.push(`/register/${userLogin.email}`);
                history.push(`/register`);
        });
-        
-        
 
       }
+    function saveData(data){
+        localStorage.setItem("appUserData",JSON.stringify(data));
+        
+        history.push(`/users/detail/${data.id}`); 
+
+    }
 
 
     return(

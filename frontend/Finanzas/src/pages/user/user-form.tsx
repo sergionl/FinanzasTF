@@ -51,6 +51,7 @@ function UsersForm(){
             //        console.log(data);
             //        history.push(`/users/detail/${data.id}`);
             //});
+            apiUsers.add(user);
             history.push('/');
         }
         

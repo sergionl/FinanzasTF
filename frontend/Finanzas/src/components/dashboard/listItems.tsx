@@ -23,25 +23,25 @@ const appUserData:User = Object.assign(new User,
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
-      <ListItemText primary="LetSkole" />
+      <ListItemText primary="Bonera" />
     </ListItem>
   </div>
 );
 
 export const secondaryListItems = (
   <div>
-    <ListSubheader inset>Usuarios</ListSubheader>
+    <ListSubheader inset>Bonos</ListSubheader>
       <ListItem
           button
           component={NavLink}
           //Agrega al router el "to"
-          to={"/users/list"}
+          to={"/bonos/list"}
           activeClassName="Mui-selected"
       >
           <ListItemIcon>
               <AssignmentIcon />
           </ListItemIcon>
-          <ListItemText primary="Mostrar usuarios" />
+          <ListItemText primary="Mostrar Bonos" />
       </ListItem>
 
     <ListSubheader inset>Grupos</ListSubheader>

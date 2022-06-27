@@ -348,6 +348,72 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "ExcelFinancialFunctions/3.2.0": {
+        "dependencies": {
+          "FSharp.Core": "6.0.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ExcelFinancialFunctions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/ExcelFinancialFunctions.dll": {}
+        }
+      },
+      "FSharp.Core/6.0.4": {
+        "runtime": {
+          "lib/netstandard2.1/FSharp.Core.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.422.21903"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.1/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.1/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.1/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.1/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.1/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.1/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.1/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.1/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.1/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.1/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.1/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/FSharp.Core.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {
@@ -1544,6 +1610,7 @@
       },
       "Finanzas.Services/1.0.0": {
         "dependencies": {
+          "ExcelFinancialFunctions": "3.2.0",
           "Finanzas.DataAccess": "1.0.0",
           "Finanzas.Dto": "1.0.0"
         },
@@ -3213,6 +3280,20 @@
       "sha512": "sha512-0asw5WxdCFh2OTi9Gv+oKyH9SzxwYQSnO8TV5Dd0GggovILzJW4UimP26JAcxc3yB5NnC5urooZ1BBs8ElpiBw==",
       "path": "automapper.extensions.microsoft.dependencyinjection/11.0.0",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512"
+    },
+    "ExcelFinancialFunctions/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2XFPNnVaJdae9c3sBta6O8kqkXtlJwC0Jo67ZXyHOwRZ64SHLAAIMnjNUJHI0ecygRmC52wEKLwE28KM5L86wA==",
+      "path": "excelfinancialfunctions/3.2.0",
+      "hashPath": "excelfinancialfunctions.3.2.0.nupkg.sha512"
+    },
+    "FSharp.Core/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CYqAfmO7JvN38M+ACkstS8taVfl8C0mCkvSiBAshfKuu2Nut6+8MuFU7Wahu09wGIyFPlRz5ArFWxSOM5mhMSA==",
+      "path": "fsharp.core/6.0.4",
+      "hashPath": "fsharp.core.6.0.4.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",

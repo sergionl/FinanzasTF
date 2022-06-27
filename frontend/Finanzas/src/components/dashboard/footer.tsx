@@ -9,7 +9,7 @@ function Footer(props: any) {
       <footer className={classes.footer}>
         <Container maxWidth="sm">
           <Typography variant="body1" align="center">
-            Ingeniería de Software
+            Finanzas e Ingeniería Económica
           </Typography>
           <Typography variant="body2" align="center" color="textSecondary">
             {"Copyright © "}

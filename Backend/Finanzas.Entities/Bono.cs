@@ -14,6 +14,8 @@ namespace Finanzas.Entities
   
         public int ValorNominal { get; set; }
 
+        public int Tiempo { get; set; }
+
         public string PeriodoDePago { get; set; }
 
         public string nombre { get; set; }
@@ -21,6 +23,12 @@ namespace Finanzas.Entities
         public bool Soles { get; set; }
 
         public bool MercadoPrimario { get; set; }
+
+        public double VAN { get; set; }
+
+        public double TIR { get; set; }
+
+        public double Convex { get; set; }
 
         //Many to Many
         public ICollection<UserBono> UserBonos { get; set; }

@@ -19,6 +19,7 @@ namespace Finanzas
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -29,15 +30,26 @@ namespace Finanzas
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                                  builder =>
+                                  {
+                                      builder.WithOrigins("http://localhost:3000")
+                                      .AllowAnyHeader()
+                                      .AllowAnyMethod()
+                                      .AllowAnyOrigin();
+                                  });
+            });
             services.AddControllers();
             services.AddInjection();
             services.AddDbContext<FinanzasDbContext>(
-                options => options.UseSqlServer(@"Server = DESKTOP-VH303IU; Database = FinanzasDB; Integrated Security = true;"));
+                options => options.UseSqlServer(@"Server = DESKTOP-VH303IUoooooooooooooo; Database = FinanzasDB; Integrated Security = true;"));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Finanzas", Version = "v1" });
             });
+
         }
 
         

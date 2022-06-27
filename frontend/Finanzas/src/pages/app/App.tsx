@@ -5,6 +5,7 @@ import Dashboard from "../../components/dashboard/dashboard";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 
 import UserRouter from "./router/user-router";
+import BonoRouter from "./router/bono-router";
 
 import DateFnsUtils from '@date-io/date-fns';
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
@@ -25,6 +26,7 @@ function App() {
             
 
             <UserRouter />
+            <BonoRouter />
             
           </Dashboard>
         </Switch>

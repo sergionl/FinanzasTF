@@ -9,6 +9,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="ExcelFinancialFunctions" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Finanzas.DataAccess\Finanzas.DataAccess.csproj" />
     <ProjectReference Include="..\Finanzas.Dto\Finanzas.Dto.csproj" />
   </ItemGroup>
