@@ -44,7 +44,8 @@ namespace Finanzas
             services.AddControllers();
             services.AddInjection();
             services.AddDbContext<FinanzasDbContext>(
-                options => options.UseSqlServer(@"Server = DESKTOP-VH303IU; Database = FinanzasDB; Integrated Security = true;"));
+                //options => options.UseSqlServer(@"Server = DESKTOP-VH303IU; Database = FinanzasDB; Integrated Security = true;"));
+                options => options.UseSqlServer(@"Data Source=SQL5109.site4now.net;Initial Catalog=db_a89352_bonera;User Id=db_a89352_bonera_admin;Password=web123yeih;"));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Finanzas", Version = "v1" });
