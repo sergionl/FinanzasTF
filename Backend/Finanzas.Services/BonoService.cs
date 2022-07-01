@@ -60,7 +60,9 @@ namespace Finanzas.Services
                     van += aux;
                 }
             }
-            van -= entity.ValorNominal;
+            double vn = entity.ValorNominal;
+            van -= vn;
+            van = Math.Round(van, 2);
             //int tamanio = entity.Tiempo;
 
             double[] cashFlows = new double[] { -entity.ValorNominal };
@@ -82,6 +84,7 @@ namespace Finanzas.Services
                 }
             }
             double irr = Financial.Irr(cashFlows);
+            irr = Math.Round(irr, 2);
 
 
             //Convex things
@@ -103,6 +106,7 @@ namespace Finanzas.Services
             }
 
             convex = (1 / (sumaflujoVP * Math.Pow(1 + ta, 2))) * sumaConvexAllValues;
+            convex = Math.Round(convex, 2);
             //double[] cashFlows2 = new double[] { };
             //double aux2 = van - entity.ValorNominal;//?
             //double aux3 = aux2 * Math.Pow((1 + entity.TasaAnual), 2);//?
