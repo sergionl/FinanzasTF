@@ -1,7 +1,8 @@
 import axios, { AxiosResponse } from "axios";
 
-//axios.defaults.baseURL = "https://letskole.herokuapp.com/api/v1";
- axios.defaults.baseURL = "https://localhost:5001/api/";
+
+// axios.defaults.baseURL = "https://localhost:5001/api/";
+axios.defaults.baseURL = "https://finance-bonera.herokuapp.com/api/";
 
 
 const responseBody = <T>(response: AxiosResponse<T>) => response.data;

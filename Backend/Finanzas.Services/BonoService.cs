@@ -64,25 +64,53 @@ namespace Finanzas.Services
             //int tamanio = entity.Tiempo;
 
             double[] cashFlows = new double[] { -entity.ValorNominal };
-            
+            double[] cashFlows2 = new double[] { }; //convex
+
             for (double i = 1; i < entity.Tiempo + 1; i++)
             {
                 if (i != entity.Tiempo)
                 {
                     cashFlows = cashFlows.Concat(new double[] {interes}).ToArray();
+                    cashFlows2 = cashFlows2.Concat(new double[] { interes }).ToArray();
                     //cashFlows.Append(interes);
                 }
                 else
                 {
                     cashFlows = cashFlows.Concat(new double[] { entity.ValorNominal + interes }).ToArray();
+                    cashFlows2 = cashFlows2.Concat(new double[] { entity.ValorNominal + interes }).ToArray();
                     //cashFlows.Append(entity.ValorNominal+interes);
                 }
             }
             double irr = Financial.Irr(cashFlows);
 
-            double convex = 0;
 
-            //throw new FinanzasException("It is neccesary to add a name");
+            //Convex things
+            double convex = 0; //(1/flujoVP*(1+te)^2))*
+            //Flujo VP
+            double[] flujoVP = new double[] { };
+            double sumaflujoVP = 0;
+            for (int j = 0; j < cashFlows2.Length; j++)
+            {
+                flujoVP = flujoVP.Concat(new double[] { cashFlows2[j]/ Math.Pow(1 + ta, j+1) }).ToArray();
+                sumaflujoVP += cashFlows2[j] / Math.Pow(1 + ta, j + 1);
+            }
+            double[] ConvexAllValues = new double[] { };
+            double sumaConvexAllValues = 0;
+            for (int j = 0; j < flujoVP.Length; j++)
+            {
+                ConvexAllValues = ConvexAllValues.Concat(new double[] { flujoVP[j]*((Math.Pow(j+1, 2)+(j+1))/(Math.Pow(1+ta, j + 1)))  }).ToArray();
+                sumaConvexAllValues += flujoVP[j] * ((Math.Pow(j + 1, 2) + (j + 1)) / (Math.Pow(1 + ta, j + 1)));
+            }
+
+            convex = (1 / (sumaflujoVP * Math.Pow(1 + ta, 2))) * sumaConvexAllValues;
+            //double[] cashFlows2 = new double[] { };
+            //double aux2 = van - entity.ValorNominal;//?
+            //double aux3 = aux2 * Math.Pow((1 + entity.TasaAnual), 2);//?
+            //Un aux para el valor nominal
+            //double auvn = ((entity.ValorNominal + interes) / Math.Pow((1 + entity.TasaAnual), 2)) * (Math.Pow(entity.Tiempo, 2) + entity.Tiempo);
+          
+
+             
 
 
             await _repository.Create(new Bono
